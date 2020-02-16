@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:melcbank/pages/login.page.dart';
+import 'package:melcbank/pages/reset.password.page.dart';
 import 'my.constants.dart';
 import "package:i18n_extension/i18n_widget.dart";
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -44,7 +45,11 @@ class MyApp extends StatelessWidget {
         const Locale('en', "US"),
         const Locale('pt', "BR"),
       ],
-      home: I18n(child: LoginPage()),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/reset_password': (context) => ResetPasswordPage(),
+      },
     );
   }
 }

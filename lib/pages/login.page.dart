@@ -138,7 +138,9 @@ class _LoginPageState extends State<LoginPage> {
                     height: 40,
                     alignment: Alignment.centerRight,
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushNamed(context, '/reset_password');
+                      },
                       child: Text(
                         "Reset password".i18n,
                         textAlign: TextAlign.right,
