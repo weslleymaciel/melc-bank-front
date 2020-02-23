@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:melcbank/pages/login.page.dart';
+import 'package:melcbank/pages/register.page.dart';
 import 'package:melcbank/pages/reset.password.page.dart';
 import 'my.constants.dart';
 import "package:i18n_extension/i18n_widget.dart";
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(),
         '/reset_password': (context) => ResetPasswordPage(),
+        '/register': (context) => RegisterPage(),
       },
     );
   }

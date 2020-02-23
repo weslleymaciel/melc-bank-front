@@ -176,7 +176,9 @@ class _LoginPageState extends State<LoginPage> {
                     height: 40,
                     alignment: Alignment.center,
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushNamed(context, '/register');
+                      },
                       child: Text(
                         "I want to register on MelcBank!".i18n,
                         textAlign: TextAlign.right,
